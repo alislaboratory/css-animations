@@ -1,9 +1,9 @@
 @-webkit-keyframes spinner {
   from {
     -webkit-transform: rotateY(0deg);
+    -webkit-transform: rotateY(360deg);
   }
   to {
-    -webkit-transform: rotateY(-360deg);
   }
 }
 
