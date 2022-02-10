@@ -1,0 +1,95 @@
+.text {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  animation: animateBg 2s infinite linear;
+  background-size: 300% 100%;
+  background-image: linear-gradient(
+    -119deg,
+    #da3287,
+    #ffde5e,
+    #da3287,
+    #ffde5e
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 2rem;
+}
+
+.animation-one {
+  left: 100px;
+  top: 50px;
+  width: 75px;
+  height: 75px;
+  position: relative;
+  animation: moving 4s;
+  border-radius: 30%;
+}
+
+.name {
+  display: flex;
+  width: max-content;
+  height: auto;
+  position: relative;
+}
+
+.desc {
+  display: flex;
+  width: 0px;
+  height: auto;
+  position: relative;
+
+  animation: dating 1s;
+  animation-delay: 1s;
+}
+
+.logo {
+  transition: font-size 1s;
+}
+
+.logo:hover {
+  font-size: 4rem;
+  transition: font-size 1s;
+}
+
+@keyframes dating {
+  0% {
+    width: 0px;
+  }
+  100% {
+    width: 100px;
+  }
+}
+
+@keyframes animateBg {
+  0% {
+    background-position: 0, 0;
+  }
+
+  100% {
+    background-position: 100%, 0;
+  }
+}
+
+@keyframes moving {
+  0% {
+    left: 100px;
+    top: 50px;
+  }
+  25% {
+    left: 400px;
+    top: 50px;
+  }
+
+  50% {
+    left: 300px;
+    top: 300px;
+  }
+
+  75% {
+    left: 500px;
+    top: 500px;
+  }
+  100% {
+    left: 100px;
+    top: 50px;
+  }
+}
